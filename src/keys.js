@@ -1,8 +1,8 @@
 module.exports = {
-  database: {
+  configDB: {
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'cuisine'
+    database: 'nueva'
   }
 }

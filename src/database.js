@@ -1,8 +1,8 @@
 const mysql = require("mysql2");
+const { configDB } = require("./keys");
 const { promisify } = require("util");
-const { database } = require("./keys");
 
-const pool = mysql.createPool(database);
+const pool = mysql.createPool(configDB);
 
 // * Coneccion a la Base de Datos
 pool.getConnection((err, connection) => {
